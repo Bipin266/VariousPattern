@@ -2,6 +2,10 @@ package pattern;
 
 public class StarPattern {
 	
+	public void triangle(int size) {
+		
+	}
+	
 	public void rightPyramid(int size) {
 		for(int i=1;i<=size;i++) {
 			for(int j=1;j<=i;j++) {
@@ -38,12 +42,25 @@ public class StarPattern {
 		
 	}
 	
-	
-	
+	/*					******
+	 * 					****
+	 * 					**
+	 * 					*
+	 */
+	public void reverseLeftReverseRight(int size) {
+		for(int i=1;i<=size;i++) {
+			for(int j=1;j<=size-i;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		
+	}
 	
 	public static void main(String args[]) {
 		StarPattern star=new StarPattern();
-		star.reverseRightPyramid(5);
+		star.reverseLeftReverseRight(5);
 	}
 		
 }
